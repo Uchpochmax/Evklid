@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="index.js"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Accordion -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <title>Evklid Test</title>
+</head>
+
+<body>
+  <div class="menu" id="menu">
+    <div class="menu__close-btn" id="close">
+      <img src="img/close.svg" alt="">
+    </div>
+    <ul class="list menu__list">
+      <li class="menu__item">
+        <a href="" class="link menu__link">О нас</a>
+      </li>
+      <li class="menu__item">
+        <a href="" class="link menu__link">Проекты</a>
+      </li>
+      <li class="menu__item">
+        <a href="" class="link menu__link">Этапы</a>
+      </li>
+      <li class="menu__item">
+        <a href="" class="link menu__link">Отзывы</a>
+      </li>
+      <li class="menu__item">
+        <a href="" class="link menu__link">Контакты</a>
+      </li>
+    </ul>
+  </div>
+  <header class="header">
+    <div class="container header__container">
+      <div class="burger header__burger" id="burger">
+        <img src="img/burger.svg" alt="" class="header__burger-img">
+      </div>
+      <a href="">
+        <img src="img/Logo.png" alt="" class="header__logo">
+      </a>
+      <nav class="nav header__nav">
+        <ul class="list nav__list">
+          <li class="nav__item">
+            <a href="" class="link nav__link">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="link nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="link nav__link">Этапы</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="link nav__link">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="link nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__search-btn">
+        <img src="img/search.svg" alt="" class="header__search-btn-img">
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__content">
+        <p class="hero__heading">
+          Проектные решения любой сложности
+        </p>
+        <p class="hero__description">
+          Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+          проектантов
+        </p>
+        <button class="btn hero__btn">
+          Заказать расчет
+        </button>
+      </div>
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-slide-one"></div>
+          <div class="swiper-slide swiper-slide-two"></div>
+          <div class="swiper-slide swiper-slide-three"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section class="about about__desktop">
+    <div class="container about__container">
+      <h2 class="about__heading section-heading">
+        О нас
+      </h2>
+      <p class="about__description section-description">
+        Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда
+        внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности
+        и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены
+        отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных,
+        так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип
+        будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении
+        поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта
+        способствует повышению качества экспериментов.
+      </p>
+      <div class="about__mobile-section">
+        <picture class="about__mobile-section-picture">
+          <source media="(max-width: 576px)" srcset="img/about.png">
+          <source media="(max-width: 320px)" srcset="img/about-320.png">
+          <img src="img/about-320.png" alt="" class="about__mobile-section-picture-img">
+        </picture>
+        <p class="about__description section-description">
+          Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации
+          новых принципов
+        </p>
+        <button class="btn about__img-card-description-btn about__mobile-btn">Подробнее</button>
+      </div>
+      <div class="about__card-section">
+        <div class="about__card-section-column-one">
+          <div class="about__img-card">
+            <div class="about__img-card-description">
+              <p class="about__img-card-description-text">
+                Принимая во внимание показатели успешности, перспективное планирование способствует
+                подготовке и реализации новых принципов
+              </p>
+              <button class="btn about__img-card-description-btn">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="about__card-section-column-two">
+          <div class="about__card about__card-one">
+            <span class="about__card-img">
+              <img src="img/about_one.svg" alt="" class="about__img">
+            </span>
+            <div class="about__card-text">
+              <h3 class="h3 about__card-heading">
+                Консультация с широким активом
+              </h3>
+              <p class="about__card-description section-description">
+                А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты
+                для как самодостаточных, так и внешне зависимых концептуальных решений
+              </p>
+            </div>
+          </div>
+          <div class="about__card about__card-two">
+            <div class="about__card-img">
+              <img src="img/about_two.svg" alt="" class="about__img">
+            </div>
+            <div class="about__card-text">
+              <h3 class="h3 about__card-heading">
+                В своём стремлении повысить
+              </h3>
+              <p class="about__card-description section-description">
+                Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой
+                интересный эксперимент проверки прогресса профессионального сообщества
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="work">
+    <div class="container work__container">
+      <h2 class="work__heading section-heading">Как мы работаем</h2>
+      <ul class="work__steps">
+        <li class="work__steps-item tabs__btn tabs__btn-active" data-path="one">
+          1 шаг
+        </li>
+        <li class="work__steps-item tabs__btn" data-path="two">
+          2 шаг
+        </li>
+        <li class="work__steps-item tabs__btn" data-path="three">
+          3 шаг
+        </li>
+        <li class="work__steps-item tabs__btn" data-path="four">
+          4 шаг
+        </li>
+      </ul>
+      <div class="work__content">
+        <div class="work__left tab-content tab-content-active" data-target="one">
+          <h3 class="h3 tab-heading">Проводим консультацию</h3>
+          <p class="tab-descr section-description">
+            Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации
+            современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены
+            соответствующими инстанциями.
+          </p>
+          <p class="tab-descr section-description">
+            А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены
+            исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных
+            источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся
+            вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины
+            в целом, однако конкретные выводы, разумеется, призваны к ответу.
+          </p>
+          <div class="tab-descr-btn">
+            <button class="btn work-btn tab-btn-more">Подробнее</button>
+            <button class="btn work-btn tab-btn-contract">Договор</button>
+          </div>
+        </div>
+        <div class="work__left tab-content" data-target="two">
+          <h3 class="h3 tab-heading">Растегиваем ширинку</h3>
+          <p class="tab-descr section-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor excepturi ratione harum asperiores corporis
+            nihil sed adipisci, ad dolores voluptate quasi magni aperiam deserunt exercitationem porro totam rerum culpa
+            ipsam.
+          </p>
+          <p class="tab-descr section-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem inventore quam, officia alias repudiandae
+            neque eaque reiciendis, fuga voluptas praesentium temporibus voluptate quos quaerat a blanditiis obcaecati
+            ad. Dolorum, atque.
+          </p>
+          <div class="tab-descr-btn">
+            <button class="btn work-btn tab-btn-more">Подробнее</button>
+            <button class="btn work-btn tab-btn-contract">Договор</button>
+          </div>
+        </div>
+        <div class="work__left tab-content" data-target="three">
+          <h3 class="h3 tab-heading">Достаем огромный член из штанов</h3>
+          <p class="tab-descr section-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, error. Placeat, veritatis. Aliquid
+            recusandae laboriosam placeat animi error quibusdam? Recusandae maiores deserunt atque incidunt impedit,
+            necessitatibus perspiciatis asperiores veniam fuga.
+          </p>
+          <p class="tab-descr section-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, numquam quas, error cumque ipsa labore sint
+            repellat perspiciatis ex enim esse sed dolorum incidunt neque. Excepturi culpa nulla dolorem quos.
+          </p>
+          <div class="tab-descr-btn">
+            <button class="btn work-btn tab-btn-more">Подробнее</button>
+            <button class="btn work-btn tab-btn-contract">Договор</button>
+          </div>
+        </div>
+        <div class="work__left tab-content" data-target="four">
+          <h3 class="h3 tab-heading">И кладем его на работу</h3>
+          <p class="tab-descr section-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore itaque quo amet temporibus reiciendis
+            architecto porro distinctio veritatis, ducimus laborum sed, eius quos blanditiis odit vel, sequi repudiandae
+            nobis esse.
+          </p>
+          <p class="tab-descr section-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem mollitia laborum expedita possimus
+            suscipit, itaque quis nam ex quisquam unde, id dolorem, architecto iste fuga nemo facilis aspernatur et.
+          </p>
+          <div class="tab-descr-btn">
+            <button class="btn work-btn tab-btn-more">Подробнее</button>
+            <button class="btn work-btn tab-btn-contract">Договор</button>
+          </div>
+        </div>
+        <div class="work__right">
+          <img src="img/work.png" alt="" class="work__img work__img-max">
+          <img src="img/work-min.png" alt="" class="work__img work__img-min">
+          <img src="img/work-mob.png" alt="" class="work__img work__img-mob">
+          <img src="img/work-320.png" alt="" class="work__img work__img-320">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="questions">
+    <div class="container questions__container">
+      <h2 class="section-heading questions__heading">Часто задаваемые вопросы</h2>
+      <div class="accordion questions__some-questions-list" id="accordion">
+        <h3 class="questions__some-questions-item h3">
+          Из чего формируется конечная стоимость проекта?
+          <img src="img/+х.svg" alt="" class="accordion__img">
+        </h3>
+        <div>
+          <p>
+            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас 
+            к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы.
+            Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных
+            требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример
+            континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
+            этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым
+            свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+          </p>
+          <p>
+            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу.
+            Явные признаки победы институционализации набирают популярность среди определённых слоёв населения,
+            а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы,
+            а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть
+            представлены в исключительно положительном свете.
+          </p>
+        </div>
+        <h3 class="questions__some-questions-item h3">
+          У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+          <img src="img/+х.svg" alt="" class="accordion__img">
+        </h3>
+        <div>
+          <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+            mauris vel est.
+          </p>
+          <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+        <h3 class="questions__some-questions-item h3">
+          Я выбираю между разными компаниями. В чём ваше отличие?
+          <img src="img/+х.svg" alt="" class="accordion__img">
+        </h3>
+        <div>
+          <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+            mauris vel est.
+          </p>
+          <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+        <h3 class="questions__some-questions-item h3">
+          Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
+          <img src="img/+х.svg" alt="" class="accordion__img">
+        </h3>
+        <div>
+          <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+            mauris vel est.
+          </p>
+          <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+        <h3 class="questions__some-questions-item h3">
+          Могу ли я вернуть деньги на каком-либо из этапов работ?
+          <img src="img/+х.svg" alt="" class="accordion__img">
+        </h3>
+        <div>
+          <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+            mauris vel est.
+          </p>
+          <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__left">
+        <a href="">
+          <img src="img/Logo-black.png" alt="" class="footer__logo">
+        </a>
+        <nav class="nav footer__nav">
+          <ul class="list footer__list">
+            <li class="nav__item">
+              <a href="" class="link footer__link">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="link footer__link">Проекты</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="link footer__link">Отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="link footer__link">Договор оферты</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="link footer__link">Договор подряда</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="link footer__link">Конфиденциальность</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="link footer__link">Партнерское соглашение</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <a href="" class="footer__social-link">
+            <img src="img/ok.svg" alt="" class="footer__social-img">
+          </a>
+          <a href="" class="footer__social-link">
+            <img src="img/vk.svg" alt="" class="footer__social-img">
+          </a>
+        </div>
+      </div>
+      <div class="footer__center">
+        <h2 class="section-heading footer__form-heading">Оставить заявку</h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete class="footer-form" method="POST">
+          <input required type="text" name="name" placeholder="Фамилия, имя и отчество*" class="footer__input"
+            id="name">
+          <input required type="email" placeholder="Email*" class="footer__input" name="email" id="email">
+          <input required type="text" name="message" placeholder="Сообщение" class="footer__input" id="message">
+          <div class="footer__btn-box">
+            <button type="submit" class="btn footer__btn-submit">
+              Отправить данные
+            </button>
+            <div class="footer__checkbox">
+              <label for="submit-checkbox" class="footer__submit-checkbox-text">
+                <input required type="checkbox" name="checkbox" class="footer__submit-checkbox" id="submit-checkbox">
+                Согласен на обработку данных
+                <span class="checkbox__span"></span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer__right">
+        <p class="footer__right-description">
+          Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта:
+          разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким
+          образом, консультация
+          с широким активом обеспечивает широкому кругу (специалистов) участие
+          в формировании стандартных подходов.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Swiper
+    const swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+      simulateTouch: true,
+      touchRatio: true,
+      grabCursor: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+    });
+  </script>
+  <script>
+    // Accordion
+    $(function () {
+      $("#accordion").accordion({
+        collapsible: true,
+        active: false,
+      });
+    });
+  </script>
+</body>
+
+</html>
